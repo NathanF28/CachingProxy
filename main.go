@@ -20,6 +20,7 @@ func main() {
 
 	if *clearCache {
 		fmt.Println("Clearing Cache")
+		p.ClearCache()
 		// call the method to clear the cache
 	} else if *port != 0 && *origin != "" {
 		// Register all routes to proxy(router)
